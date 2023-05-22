@@ -3,7 +3,7 @@
 #include <string>
 
 int main() {
-  constexpr double number = 1.5;
+  constexpr float number = 1.5;
   constexpr auto numberString = "1.5";
 
   // On startup the std::setlocale(LC_ALL, "C") is executed
