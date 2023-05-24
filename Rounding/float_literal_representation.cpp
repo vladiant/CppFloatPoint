@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string_view>
+
+int main() {
+  // Float literal
+  long double pi_fl =
+      3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117068f;
+
+  // Double literal
+  long double pi_dl =
+      3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117068;
+
+  // Long double literal
+  long double pi_ldl =
+      3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117068l;
+
+  constexpr std::string_view literal =
+      R"lit(3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117068)lit";
+
+  std::cout.precision(literal.size());
+
+  std::cout << "Literal:                           " << literal << '\n';
+
+  // 3.1415927410125732421875
+  std::cout << "Long Double - Float Literal:       " << pi_fl << '\n';
+
+  // 3.141592653589793115997963468544185161590576171875
+  std::cout << "Long Double - Double Literal:      " << pi_dl << '\n';
+
+  // 3.14159265358979323851280895940618620443274267017841339111328125
+  std::cout << "Long Double - Long Double Literal: " << pi_ldl << '\n';
+
+  return 0;
+}
