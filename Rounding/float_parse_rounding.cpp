@@ -1,6 +1,5 @@
 #include <cfenv>
 #include <charconv>
-#include <cmath>
 #include <iostream>
 #include <string_view>
 
