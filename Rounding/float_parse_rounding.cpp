@@ -1,6 +1,7 @@
 #include <cfenv>
 #include <charconv>
 #include <iostream>
+#include <limits>
 #include <string_view>
 
 void parseFloat(std::string_view literal, float& value) {
@@ -24,6 +25,28 @@ auto getRoundPolicy(int rount_policy) {
   }
 
   return "UNKNOWN";
+}
+
+auto getRoundStyle(std::float_round_style round_style) {
+  switch (round_style) {
+    case std::round_indeterminate:
+      return "std::round_indeterminate";
+      break;
+    case std::round_toward_zero:
+      return "std::round_toward_zero";
+      break;
+    case std::round_to_nearest:
+      return "std::round_to_nearest";
+      break;
+    case std::round_toward_infinity:
+      return "std::round_toward_infinity";
+      break;
+    case std::round_toward_neg_infinity:
+      return "std::round_toward_neg_infinity";
+      break;
+  }
+
+  return "unknown_round_style";
 }
 
 int main() {
@@ -81,8 +104,10 @@ int main() {
     float v8{};
     parseFloat(v8_literal, v8);
 
-    // std::from_chars always follows FE_TONEAREST
+    // rounding style used by floating-point arithmetic
+    std::cout << getRoundStyle(std::numeric_limits<float>::round_style) << '\n';
 
+    // std::from_chars always follows FE_TONEAREST
     std::cout << getRoundPolicy(round_policy) << '\n';
 
     // 3.141592502593994140625
