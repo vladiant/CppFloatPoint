@@ -1,13 +1,9 @@
 # Floating Point Comparison
 
 ## Operator == has problem
-* Does bitwise comparison
-* -0 != 0 (negative zero != positive zero)
-* NaN != NaN
-
-## Direct comparison
-* -0 == 0 (negative zero == positive zero)
-* NaN != NaN
+* `-0 == 0` is `true` (bitwise not equal)
+* `NaN != NaN` is `false` (bitwise equal)
+* Other float numbers - bitwise comparison
 
 ## Absoulte margin comparison 
 * `std::abs(lhs - rhs) < margin`
@@ -39,4 +35,6 @@
 * [Comparing Floating Point Numbers, 2012 Edition](https://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/)
 * [Boost: Floating point comparisons](https://www.boost.org/doc/libs/1_34_0/libs/test/doc/components/test_tools/floating_point_comparison.html)
 * [Catch2: Floating point comparisons](https://github.com/catchorg/Catch2/blob/devel/docs/comparing-floating-point-numbers.md#top)
+* [Boost ULP](https://www.boost.org/doc/libs/1_48_0/libs/math/doc/sf_and_dist/html/math_toolkit/utils/next_float/float_distance.html)
+
 
