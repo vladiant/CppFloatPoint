@@ -12,7 +12,6 @@
 * For values larger than several units, margin may be too small.
 * Not suitable for large numbers - same as `operator ==`
 * For values closer to zero, margin may be too large.
-* `std::abs(lhs - rhs) < std::numeric_limits<float>::min()` - good for values close to zero
 * Does not break down around zero
 
 ## Relative epsilon comparison
