@@ -5,8 +5,18 @@
 * Example:  Archimedes PI approximation
 * Subtraction 1 from a number extremely close to 1 leads to an increasingly problematic loss of significant digits.
 
+## Wrong Convergence
+* Section 1.3.2 of “Handbook of Floating-Point Arithmetic”
+* Example of an algorithm implemented in finite-precision floating-point arithmetic, actually solves a slightly different problem than from which it was derived algebraically.
+* The computed value of fourth iteration is slightly incorrect due to round-off errors.
+* Each succeeding iteration is incorrect, and the errors grow as the recursion calculation proceeds.
+* Thus the expansion being calculated actually corresponds to a slightly different problem with different convergence value - `100`.
+* Using the `Boost.Multiprecision` converges iterations slowly to correct value.
+
 ## References
 * [Machine precision and backward error analysis](https://en.wikipedia.org/wiki/Floating-point_arithmetic)
 * [CERN openlab Mini-Workshop on Floating-Point Computation](https://indico.cern.ch/event/626147/)
 * [Boost.Multiprecision](https://www.boost.org/doc/libs/1_80_0/libs/multiprecision/doc/html/index.html)
+* [Handbook of Floating-Point Arithmetic](http://www.springer.com/us/book/9780817647049)
+* [How Futile are Mindless Assessments of Roundoff in Floating-Point Computation?](http://www.eecs.berkeley.edu/~wkahan/Mindless.pdf)
 
