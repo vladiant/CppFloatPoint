@@ -1,5 +1,22 @@
 # Floating point computation
 
+## Summation
+
+### Traditional
+* Prone to errors
+
+### Sorting and Insertion
+* Reorder the operands
+
+### Compensated 
+* Based on FastTwoSum and TwoSum techniques
+* Knowledge of the exact rounding error in a floating-point
+addition is used to correct the summation
+* Developed by William Kahan
+
+### Hints
+* If higher precision is available, use it
+
 ## Convergence
 * Round-off error can affect the convergence
 * Example:  Archimedes PI approximation
