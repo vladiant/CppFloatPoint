@@ -10,8 +10,7 @@
 
 ### Compensated 
 * Based on FastTwoSum and TwoSum techniques
-* Knowledge of the exact rounding error in a floating-point
-addition is used to correct the summation
+* Knowledge of the exact rounding error in a floating-point addition is used to correct the summation
 * Developed by William Kahan
 
 ### Hints
@@ -36,4 +35,6 @@ addition is used to correct the summation
 * [Boost.Multiprecision](https://www.boost.org/doc/libs/1_80_0/libs/multiprecision/doc/html/index.html)
 * [Handbook of Floating-Point Arithmetic](http://www.springer.com/us/book/9780817647049)
 * [How Futile are Mindless Assessments of Roundoff in Floating-Point Computation?](http://www.eecs.berkeley.edu/~wkahan/Mindless.pdf)
+* [Summing an array of floating point numbers](https://www.johndcook.com/blog/2019/11/05/kahan/)
+* [Kahan summation algorithm](https://en.wikipedia.org/wiki/Kahan_summation_algorithm)
 
