@@ -9,6 +9,12 @@ The compiler may not make changes such as
 * x may be `-0`, or a `NaN`:`x + 0 <-> x`
 * x may be `-0`, `inf` or a `NaN`: `x ∗ 0 <-> 0`
 
+## Optimizations Affecting Value Safety
+* Expression rearrangements
+* Flush-to-zero (Replace all generated subnormals with 0)
+* Approximate division and square root
+* Math library accuracy
+
 ## IEEE 754 compliance - Full
 * Support infinities, NaNs, gradual underflow, signed zeros, exception flags and traps, setting rounding modes.
 * GCC : `-frounding-math` `-fsignaling-nans`
