@@ -41,6 +41,15 @@ The compiler may not make changes such as
 * GCC, Clang : `-ffast-math`
 * MSVC : `/fp:fast`
 
+## CPU
+CPU manufacturer can impact results. Not all floating-point instructions execute exactly the same on AMD and Intel processors
+
+* The rsqrt and rcp instructions differ
+* They are not standardized
+* Both implementations meet the specification given by Intel
+
+The exact same non-vectorized, non-parallelized, non-threaded application may give different results on systems with similar processors.
+
 ## References
 * [GCC - Options That Control Optimization](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html)
 * [Semantics of Floating Point Math in GCC](https://gcc.gnu.org/wiki/FloatingPointMath)
@@ -48,3 +57,4 @@ The compiler may not make changes such as
 * [MSVC - Specify floating-point behavior](https://learn.microsoft.com/en-us/cpp/build/reference/fp-specify-floating-point-behavior?view=msvc-170)
 * [Beware of fast-math](https://simonbyrne.github.io/notes/fastmath/)
 * [64-bit programs and floating-point calculations](https://pvs-studio.com/en/blog/posts/cpp/0074/)
+* [CERN openlab Mini-Workshop on Floating-Point Computation 2017](https://indico.cern.ch/event/626147/)
