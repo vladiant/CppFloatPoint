@@ -50,6 +50,9 @@ int main() {
 
   // std::fetestexcept(FE_INVALID) is true
 
+  std::cout << "-0.0f + 0.0f = " << -0.0f + 0.0f << '\n';
+  std::cout << "-0.0f * 0.0f = " << -0.0f * 0.0f << '\n';
+
   show_env();
 
   return 0;
