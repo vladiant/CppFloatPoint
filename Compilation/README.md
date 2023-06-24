@@ -1,5 +1,14 @@
 # Floating point related compilation flags
 
+## Value Safety
+The compiler may not make changes such as
+* Reassociations: `(x + y) + z ⇔ x + (y + z) `
+* Distributions: `x ∗ (y + z) ⇔ x ∗ y + x ∗ z`
+* May change under-/overflow behavior: `x ∗ (y ∗ z) <-> (x ∗ y) ∗ z`
+* x may be 0, `inf` or a `NaN`: `x/x <-> 1.0`
+* x may be `-0`, or a `NaN`:`x + 0 <-> x`
+* x may be `-0`, `inf` or a `NaN`: `x ∗ 0 <-> 0`
+
 ## IEEE 754 compliance - Full
 * Support infinities, NaNs, gradual underflow, signed zeros, exception flags and traps, setting rounding modes.
 * GCC : `-frounding-math` `-fsignaling-nans`
