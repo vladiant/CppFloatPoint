@@ -20,6 +20,13 @@
 * Replace `std::stof` with stream parsing with preset `C` locale.
 * Consider `std::from_chars` for future use.
 
+## Online samples
+* [parse_stof.cpp](https://coliru.stacked-crooked.com/a/e17c28aa4671614c)
+* [parse_from_chars.cpp](https://coliru.stacked-crooked.com/a/6c5bc449ddb8d4c4)
+* [parse_stream.cpp](https://coliru.stacked-crooked.com/a/de049e3a26882660)
+* [parse_quick_benchmark.cpp](parse_quick_benchmark.cpp)
+* [parse_benchmark.cpp](https://godbolt.org/z/qb7MEqbfz)
+
 ## References
 * [std::stof](https://en.cppreference.com/w/cpp/string/basic_string/stof)
 * [std::setlocale](https://en.cppreference.com/w/cpp/locale/setlocale)
