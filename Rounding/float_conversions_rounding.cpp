@@ -5,6 +5,7 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
+#include <cstdint>
 
 auto getRoundPolicy(int rount_policy) {
   switch (rount_policy) {

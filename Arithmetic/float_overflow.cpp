@@ -35,7 +35,7 @@ int main() {
 
   float result = a * 2.0f;
 
-  std::cout << "denorm_min / 2 = " << result << '\n';
+  std::cout << "denorm_max * 2 = " << result << '\n';
 
   // std::fetestexcept(FE_OVERFLOW) is true
   // std::fetestexcept(FE_INEXACT) is true

@@ -3,6 +3,7 @@
 #include <charconv>
 #include <iomanip>
 #include <iostream>
+#include <cstdint>
 
 auto getRoundPolicy(int rount_policy) {
   switch (rount_policy) {
