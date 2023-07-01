@@ -21,6 +21,15 @@
 * Can not be changed
 * Usually round to nearest representable value for float point types, round to zero for integer types
 
+## Online samples
+* [float_rounding_style.cpp](https://godbolt.org/z/sTWYbE8z5)
+* [float_stof_parse_rounding.cpp](https://godbolt.org/z/Tnb6Eonc1)
+* [float_stream_parse_rounding.cpp](https://godbolt.org/z/dKfE59Wqe)
+* [float_conversions_rounding.cpp](https://godbolt.org/z/dzexca8j1)
+* [float_print_rounding.cpp](https://godbolt.org/z/11GevPcKs)
+* [float_stdmath_rounding.cpp](https://godbolt.org/z/r8EjEYoE4)
+* [float_arithmetic_rounding.cpp](https://godbolt.org/z/hvbxz3fq1)
+
 ## References
 * [Rounding fraud](https://en.wikipedia.org/wiki/Rounding_fraud)
 * [std::nextafter](https://en.cppreference.com/w/cpp/numeric/math/nextafter)
