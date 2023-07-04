@@ -29,6 +29,12 @@
 * Thus the expansion being calculated actually corresponds to a slightly different problem with different convergence value - `100`.
 * Using the `Boost.Multiprecision` converges iterations slowly to correct value.
 
+## Online samples
+* [summation.cpp](https://godbolt.org/z/8vjavTj89)
+* [summation_stdfloat.cpp](https://godbolt.org/z/vM9dTjKab)
+* [unstable_convergence.cpp](https://godbolt.org/z/jbTejnWhj)
+* [stable_convergence.cpp](https://godbolt.org/z/zzMTc4e13)
+
 ## References
 * [Machine precision and backward error analysis](https://en.wikipedia.org/wiki/Floating-point_arithmetic)
 * [CERN openlab Mini-Workshop on Floating-Point Computation](https://indico.cern.ch/event/626147/)
