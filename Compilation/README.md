@@ -50,6 +50,33 @@ CPU manufacturer can impact results. Not all floating-point instructions execute
 
 The exact same non-vectorized, non-parallelized, non-threaded application may give different results on systems with similar processors.
 
+## Examples
+
+### Simple calculation
+[64-bit programs and floating-point calculations](https://pvs-studio.com/en/blog/posts/cpp/0074/)
+```
+float fConst = 1.4318620f;
+float fValue1 = 40.598053f * (1.f - 1.4318620f / 100.f);
+float fValue2 = 40.598053f * (1.f - fConst / 100.f);
+```
+
+* [GCC](https://godbolt.org/z/Go9ccn6Pd), [Clang](https://godbolt.org/z/8xfq1s9ce) : `fValue1 == fValue2 == 40.016742706298828125`
+
+* [x86-64 icc 2021.6.0](https://godbolt.org/z/8dP5b9dxe) : `fValue1 == 40.01674652099609375` and `fValue2 == 40.016742706298828125`
+* [x86-64 icc 2021.6.0 -fp-model strict](https://godbolt.org/z/fssdMsWfa) : `fValue1 == fValue2 == 40.016742706298828125`
+* [x86-64 icc 2021.6.0 -fp-model precise](https://godbolt.org/z/aazh6KrcT) : `fValue1 == fValue2 == 40.016742706298828125`
+* [x86-64 icc 2021.6.0 -fp-model fast](https://godbolt.org/z/KEnMrqKsv) : `fValue1 == 40.01674652099609375` and `fValue2 == 40.016742706298828125`
+
+* [x86 MSVC v19.latest /fp:strict](https://godbolt.org/z/Gx11e6YP3)  : `fValue1 == fValue2 == 40.016742706298828125`
+* [x86 MSVC v19.latest /fp:precise](https://godbolt.org/z/cr96j4374)  : `fValue1 == fValue2 == 40.016742706298828125`
+* [x86 MSVC v19.latest /fp:fast](https://godbolt.org/z/v5Yhqz5YM) : `fValue1 == 40.01674652099609375` and `fValue2 == 40.016742706298828125`
+
+### Check for special values and `-ffast-math`
+* [GCC](https://godbolt.org/z/va5Wd6KEx) : all true
+* [GCC -ffast-math](https://godbolt.org/z/Kn8qca3P7) : all functions checking special values are false
+* [Clang](https://godbolt.org/z/9W4xYb93r) : all true
+* [Clang -ffast-math](https://godbolt.org/z/h5ndd97qs) : all true
+
 ## References
 * [GCC - Options That Control Optimization](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html)
 * [Semantics of Floating Point Math in GCC](https://gcc.gnu.org/wiki/FloatingPointMath)
