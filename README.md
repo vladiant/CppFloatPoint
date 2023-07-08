@@ -8,6 +8,11 @@
 * Floating point types in C++
 
 ## Parsing
+* Use case of parsing
+* Influence of encoding on [std::stof](https://en.cppreference.com/w/cpp/string/basic_string/stof)
+* Influence of encoding on [std::sstream](https://en.cppreference.com/w/cpp/io/basic_stringstream)
+* Use of [std::from_chars](https://en.cppreference.com/w/cpp/utility/from_chars)
+* Parsing benchmarks
 
 ## Representation
 
