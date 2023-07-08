@@ -1,6 +1,11 @@
 # C++ Floating Point Examples 
 
-## introduction
+## Introduction
+* Integer Numbers
+* Fixed Point Numbers
+* Floating Point Numbers
+* Floating Point Standard - IEEE-754
+* Floating point types in C++
 
 ## Parsing
 
