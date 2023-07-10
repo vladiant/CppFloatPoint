@@ -15,6 +15,10 @@
 * Parsing benchmarks
 
 ## Representation
+* Floating type literals
+* 32 bit floating point binary layout
+* Meaningful digits estimation
+* Closest representable neighbours
 
 ## Rounding
 
