@@ -21,6 +21,10 @@
 * Closest representable neighbours
 
 ## Rounding
+* IEEE 754 Standard Rounding Modes
+* C++ Standard Round Style
+* Floating Point Environment
+* Global Rounding Style
 
 ## Comparison
 
