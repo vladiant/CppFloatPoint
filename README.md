@@ -27,6 +27,9 @@
 * Global Rounding Style
 
 ## Comparison
+* Special values
+* Operator ==
+* Comparison Approaches
 
 ## Arithmetic
 
