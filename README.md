@@ -32,6 +32,13 @@
 * Comparison Approaches
 
 ## Arithmetic
+* Operations defined by IEEE 754
+* Exceptional conditions
+* Not Guaranteed Associativity
+* Loss of Significance
+* Catastrophic cancellation
+* Multiprecision libraries
+* Arithmetic benchmarks
 
 ## Computation
 
