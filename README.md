@@ -41,6 +41,9 @@
 * Arithmetic benchmarks
 
 ## Computation
+* Siegfried Rump Example
+* Summation Example
+* Convergence Stability
 
 ## Compilation
 
