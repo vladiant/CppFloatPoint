@@ -46,6 +46,13 @@
 * Convergence Stability
 
 ## Compilation
+* Value Safety
+* Optimizations Affecting Value Safety
+* Full Compliance to IEEE 754
+* Default Compliance to IEEE 754
+* Relaxed Compliance to IEEE 754
+* Fast Math
+* CPU
 
 ## References
 * [CppCon 2015: John Farrier “Demystifying Floating Point"](https://www.youtube.com/watch?v=k12BJGSc2Nc)
