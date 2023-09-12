@@ -61,3 +61,4 @@
 * [A refresher on the floating-point computations and the standard library. - Boguslaw Cyganek](https://www.youtube.com/watch?v=7aZbYJ5UTC8)
 * [Random ASCII – tech blog of Bruce Dawson](https://randomascii.wordpress.com/category/floating-point/)
 * [University of Cambridge: Floating-Point Computation](https://www.cl.cam.ac.uk/teaching/1011/FPComp/)
+* [Onboarding floating-point](https://www.altdevarts.com/p/onboarding-floating-point)
