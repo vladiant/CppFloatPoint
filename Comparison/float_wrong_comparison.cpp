@@ -1,6 +1,6 @@
+#include <cstdint>
 #include <iostream>
 #include <limits>
-#include <cstdint>
 
 auto floatToInt(float value) {
   static_assert(sizeof(value) == sizeof(uint32_t),

@@ -12,7 +12,6 @@ int main() {
   constexpr std::string_view literal =
       R"lit(3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117068)lit";
 
-
   std::cout << "Default precision:\n";
 
   // 3.14159

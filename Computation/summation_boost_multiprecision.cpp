@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <boost/multiprecision/cpp_dec_float.hpp>
 #include <chrono>
 #include <execution>
 #include <functional>
@@ -6,8 +7,6 @@
 #include <numeric>
 #include <random>
 #include <vector>
-
-#include <boost/multiprecision/cpp_dec_float.hpp>
 
 // Based on:
 // "A refresher on the floating-point computations and the standard library."

@@ -25,9 +25,6 @@ int main() {
   // On startup, the global locale for C++ is the "C" locale
   // and global locale is obtained by std::locale()
 
-
-
-
   // *** 1. Use default locale ***
 
   // Current locale: C
@@ -40,9 +37,6 @@ int main() {
   std::cout << "String: " << numberString
             << "  Parsed float: " << parseString(numberString) << '\n';
   std::cout << '\n';
-
-
-
 
   // *** 2. Change locale for C functions ***
 
@@ -60,9 +54,6 @@ int main() {
   std::cout << "String: " << numberString
             << "  Parsed float: " << parseString(numberString) << '\n';
   std::cout << '\n';
-
-
-
 
   // *** 3. Change locale for C++ functions, restore the locale for C functions
   // ***

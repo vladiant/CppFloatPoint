@@ -6,28 +6,28 @@
 #include <iostream>
 
 int main() {
-    using namespace boost::multiprecision;
-    cpp_dec_float_50 u = 2.0;
-    cpp_dec_float_50 v = -4;
-    cpp_dec_float_50 w;
-    int max = 20;
+  using namespace boost::multiprecision;
+  cpp_dec_float_50 u = 2.0;
+  cpp_dec_float_50 v = -4;
+  cpp_dec_float_50 w;
+  int max = 20;
 
-    std::cout << "n = " << max << '\n';
+  std::cout << "n = " << max << '\n';
 
-    std::cout << "u0 = " << u << '\n';
+  std::cout << "u0 = " << u << '\n';
 
-    std::cout << "u1 = " << v << '\n';
+  std::cout << "u1 = " << v << '\n';
 
-    std::cout << "Computation from 3 to n:\n";
+  std::cout << "Computation from 3 to n:\n";
 
-    std::cout.precision(17);
-    for (int i = 3; i <= max; i++) {
-        w = 111. - 1130. / v + 3000. / (v * u);
-        u = v;
-        v = w;
+  std::cout.precision(17);
+  for (int i = 3; i <= max; i++) {
+    w = 111. - 1130. / v + 3000. / (v * u);
+    u = v;
+    v = w;
 
-        // Should converge to 6.0
-        std::cout << "u" << i << " = " << v << '\n';
-    }
-    return 0;
+    // Should converge to 6.0
+    std::cout << "u" << i << " = " << v << '\n';
+  }
+  return 0;
 }

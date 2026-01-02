@@ -1,8 +1,8 @@
 #include <cmath>
+#include <cstdint>
 #include <iomanip>
 #include <iostream>
 #include <limits>
-#include <cstdint>
 
 auto floatToInt(float value) {
   static_assert(sizeof(value) == sizeof(uint32_t),
@@ -15,10 +15,8 @@ int main() {
   std::cout << "-0.0f == +0.0f : " << std::boolalpha << (-0.0f == +0.0f)
             << '\n';
   std::cout << "-0.0f : " << std::hex << floatToInt(-0.0f) << '\n';
-  std::cout << "+0.0f : "
-            << " " << floatToInt(+0.0f) << '\n';
-  std::cout << " 0.0f : "
-            << " " << floatToInt(0.0f) << '\n';
+  std::cout << "+0.0f : " << " " << floatToInt(+0.0f) << '\n';
+  std::cout << " 0.0f : " << " " << floatToInt(0.0f) << '\n';
 
   float valueCNaN = NAN;
   std::cout << " NAN != NAN                 : " << std::boolalpha

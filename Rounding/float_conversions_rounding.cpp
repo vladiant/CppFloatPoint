@@ -2,10 +2,10 @@
 #include <cfenv>
 #include <charconv>
 #include <cmath>
+#include <cstdint>
 #include <iomanip>
 #include <iostream>
 #include <string>
-#include <cstdint>
 
 auto getRoundPolicy(int rount_policy) {
   switch (rount_policy) {
@@ -49,7 +49,6 @@ void printNumbers(double fromValue, float toValue) {
 }
 
 int main() {
-
   double kV1 = -3.14159286499022627481281233486;
   double kV2 = -3.14159274101259011757747430238;
   double kV3 = -3.14159273624421819803842481633;

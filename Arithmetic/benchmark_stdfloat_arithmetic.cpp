@@ -1,8 +1,8 @@
 #include <chrono>
 #include <iostream>
 #include <random>
-#include <string>
 #include <stdfloat>
+#include <string>
 
 class TimeInterval {
  public:

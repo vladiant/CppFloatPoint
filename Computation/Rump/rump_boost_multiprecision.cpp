@@ -2,9 +2,8 @@
 // Section 1.3.2 of “Handbook of floating-Point Arithmetic”
 // https://link.springer.com/book/10.1007/978-0-8176-4705-6
 
-#include <iostream>
 #include <boost/multiprecision/cpp_dec_float.hpp>
-
+#include <iostream>
 
 int main() {
   using namespace boost::multiprecision;

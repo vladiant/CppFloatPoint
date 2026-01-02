@@ -1,6 +1,6 @@
+#include <charconv>
 #include <iostream>
 #include <string_view>
-#include <charconv>
 
 int main() {
   constexpr std::string_view literal =
@@ -10,7 +10,7 @@ int main() {
   std::from_chars(literal.begin(), literal.end(), pi_f);
 
   double pi_d{};
-   std::from_chars(literal.begin(), literal.end(), pi_d);
+  std::from_chars(literal.begin(), literal.end(), pi_d);
 
   long double pi_ld{};
   std::from_chars(literal.begin(), literal.end(), pi_ld);
