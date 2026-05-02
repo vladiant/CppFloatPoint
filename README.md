@@ -63,3 +63,4 @@
 * [University of Cambridge: Floating-Point Computation](https://www.cl.cam.ac.uk/teaching/1011/FPComp/)
 * [Onboarding floating-point](https://www.altdevarts.com/p/onboarding-floating-point)
 * [Floating-Point Error Handling in C++: What Actually Works](https://johnnysswlab.com/floating-point-error-handling-in-c-what-actually-works/)
+* <https://www.boost.org/library/latest/decimal/>
